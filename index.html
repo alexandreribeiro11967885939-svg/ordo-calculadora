@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora 2025</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #0f0;
+}
+
+/* Botão do menu */
+#menuBtn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Menu retrátil */
+#menu {
+  position: fixed;
+  top: 0;
+  left: -240px;
+  width: 240px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#menu a {
+  display: block;
+  padding: 14px 20px;
+  color: #0f0;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+#menu a:hover {
+  background: #222;
+}
+
+/* Conteúdo principal */
+#content {
+  padding: 70px 20px 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 90%;
+  margin-top: 20px;
+  border: 2px solid #0f0;
+  border-radius: 6px;
+  background: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<div id="menuBtn">☰</div>
+
+<nav id="menu">
+  <a href="index.html">Home</a>
+  <a href="Cássio.html">Cássio.html</a>
+  <a href="calculadoraIA.html">calculadoraIA.html</a>
+</nav>
+
+<div id="content">
+  <h1>Calculadora 2025</h1>
+  <p>Imagem SVG do repositório:</p>
+
+  <img src="alexandreribeiro1196788539-svg" alt="SVG do projeto">
+</div>
+
+<script>
+const menu = document.getElementById("menu");
+const btn = document.getElementById("menuBtn");
+let aberto = false;
+
+btn.onclick = () => {
+  aberto = !aberto;
+  menu.style.left = aberto ? "0" : "-240px";
+};
+</script>
+
+</body>
+</html>
